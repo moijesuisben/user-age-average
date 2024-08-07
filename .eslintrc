@@ -1,0 +1,16 @@
+{
+  "extends": "next",
+  "plugins": ["your-plugin"],
+  "ignorePatterns": ["path/to/ignore"],
+  "overrides": [
+    {
+      "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "rules": {
+        "prettier/prettier": "error"
+      },
+      "linterOptions": {
+        "reportUnusedDisableDirectives": true
+      }
+    }
+  ]
+}
